@@ -40,7 +40,7 @@
             <button (click)="addCarrito(item.nombre_, item.precio, item.qt, item.imagen)" type="button" class=" carc_caj btn btn-warning btn-sm">Añadir</button>
           </div>
 
-            <div class="col-4"><input class="form-control input-sm" [(ngModel)]="item.qt" type="number" min=1 [max]="item.cantidad" ></div>
+            <div class="col-4"><input class="form-control input-sm" [(ngModel)]="item.qt" type="number" min=1 [max]="item.cantidad" name="qt" ></div>
 
         </div>
 

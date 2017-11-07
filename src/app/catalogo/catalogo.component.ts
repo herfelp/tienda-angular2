@@ -29,6 +29,7 @@ export class CatalogoComponent implements OnInit {
 
   ngOnInit() {
     this.getProductosTienda();
+  
   }
 
 
@@ -50,15 +51,12 @@ getProductosTienda(){
           .subscribe(
           (data) => this.produ(data)
           )
-
       }
-
     }
 
 
     produ(data){
       this.prod = data;
-      console.log(this.prod)
     }
 
 

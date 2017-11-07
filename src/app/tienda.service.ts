@@ -24,14 +24,9 @@ export class TiendaService {
     return this.http.get(url)
       .map((response: Response) => {
         const data = response.json();
-        console.log(data);
         return data;
       })
   }
-
-
-
-
 
 
   sendProductos(productos: any){
@@ -39,6 +34,11 @@ export class TiendaService {
     const datos = JSON.stringify(productos);
     return this.http.post(url, datos)
       .map((response: Response)=> response.json())
+  }
+
+  limpiarCarro(){
+    const url = 'https://tienda2-c2b23.firebaseio.com/carritos/usuario.json'
+    return this.http.delete(url)
   }
 
 
