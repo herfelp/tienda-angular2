@@ -1,0 +1,67 @@
+.main-container {
+  background-image: url('../assets/images/main-fondo.jpg');
+
+  height:100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contenedor-carrito{
+  padding-top: 20px;
+  margin-top: 5px !important;
+  margin: auto;
+  width: 80%;
+  height: 35em;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: solid #bdbdbd 1px;
+  color: #616161;
+  max-width: 100em !important;
+}
+
+.nomprod{
+  padding-left: 2em;
+  margin-bottom: 3em;
+}
+
+.botones{
+  margin-top: 2em;
+}
+
+.item{
+  border-radius: 3px;
+  border: solid #e0e0e0 1px;
+  margin-left: 0.5em;
+  margin-right: 0.7em;
+  margin-bottom: 0.15em;
+  margin-top: 0.15em;
+  background-color: white;
+}
+
+.list-group{
+  margin-left: 1em;
+  border-radius: 5px;
+  border: solid #bdbdbd 1px;
+  margin-top: 0em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 25em;
+}
+
+.foto img{
+  margin: auto;
+  max-height: 4.2em;
+  margin-left: 0.5em;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+.subt{
+  height:1.7em;
+  margin-left: 1em;
+}
+.detalle p {
+  margin-bottom: 0.3em;
+}
+.detalle{
+  margin-top: 0.5em;
+}

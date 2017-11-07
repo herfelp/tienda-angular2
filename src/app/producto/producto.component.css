@@ -1,0 +1,53 @@
+.main-container {
+  background-image: url('../assets/images/main-fondo.jpg');
+  height:100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.contenedor-producto{
+  padding-top: 20px;
+  margin-top: 5px !important;
+  margin: auto;
+  width: 80%;
+  height: 35em;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: solid #bdbdbd 1px;
+   color: #616161;
+  max-width: 100em !important;
+
+}
+
+
+
+.foto{
+
+  position: relative;
+}
+.foto img{
+  padding: 0em;
+  max-width: 23em !important;
+  display: block;
+  margin: auto;
+  border: solid #bdbdbd 1px;
+  border-radius: 5px;
+}
+
+
+.datos_prod{
+  margin: 0.5em;
+}
+
+.nomprod-col{
+  width: 90% !important;
+  display: block;
+  margin: 1em;
+}
+.nomprod{
+  padding-left: 2em;
+}
+.boton{
+  padding-top: 2em;
+  padding-left: 4em;
+}

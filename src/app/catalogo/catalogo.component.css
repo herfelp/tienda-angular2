@@ -1,0 +1,82 @@
+.main-container {
+  background-image: url('../assets/images/main-fondo.jpg');
+  height:100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.buscador{
+  padding-top: 20px;
+  margin-top: 5px !important;
+  margin: auto;
+  width: 80%;
+  height: 8em;
+  background-color: #fafafa;
+}
+.catalogo-nombre{
+  padding-top: 1em;
+  padding-left: 3em;
+    color: #616161
+}
+.titulobusc{
+  padding-left: 1em;
+    color: #616161
+}
+.formbox{
+  margin-top: 2px;
+}
+.formulario{
+  margin-top: 10px;
+}
+.cont-prod{
+  background-color: #fafafa;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 0.5em;
+  min-height: 32em !important;
+}
+
+.productos{
+  border: solid #bdbdbd 1px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  min-height: 32em !important;
+  max-height: 32em !important;
+  border-radius: 5px;
+
+}
+.foto{
+  min-height: 14em;
+  position: relative;
+  border-radius: 5px;
+}
+.foto img{
+  padding: 0.5em;
+  max-width: 15em !important;
+  display: block;
+  margin: auto;
+}
+.producto_ind{
+  border: solid #bdbdbd 1px;
+  margin: 0.3em;
+  max-width: 15em !important;
+  border-radius: 5px;
+}
+.form-control{
+  margin-right: 0.3em;
+}
+.datos_prod{
+  margin: 0.5em;
+}
+.carc_caj{
+  height:2em !important;
+}
+
+.input-sm{
+    height:2em !important;
+  padding: 0px 5px;
+  font-size: 15px;
+}

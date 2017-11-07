@@ -1,0 +1,60 @@
+<div class="main-container">
+
+
+<app-barra  [prod]="prod"></app-barra>
+
+<div class="buscador">
+  <div class="row">
+    <div class="catalogo-nombre col-8">
+      <h2>Catálogo de productos</h2>
+
+    </div>
+    <div class="formulario col-4">
+      <span class="titulobusc">¿Qué estás buscando?</span>
+      <form class=" col-12 formbox">
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar producto" name="Search" [(ngModel)]="search">
+      </form>
+    </div>
+  </div>
+</div>
+<div class="cont-prod" *ngIf="productos">
+  <div class="productos d-flex flex-row">
+    <div class="producto_ind" *ngFor="let item of productos | filtro:search">
+      <div class="foto">
+        <img src="../assets/images/{{item.imagen}}" alt="">
+      </div>
+      <div class="datos_prod">
+        <div class="nomprod">
+          <h5>{{item.nombre_}}</h5>
+        </div>
+        <div class="carac">
+          <p>Precio:
+            ${{item.precio | number:'1.0'}}<br> Cantidad disponible: {{item.cantidad}}
+          </p>
+        </div>
+        <div class="row botones">
+          <div class="col-4 ">
+            <button [routerLink]="['/producto',item.nombre]" type="button" class=" carc_caj btn btn-primary btn-sm">Ver más</button>
+          </div>
+          <div class="col-4">
+            <button (click)="addCarrito(item.nombre_, item.precio, item.qt, item.imagen)" type="button" class=" carc_caj btn btn-warning btn-sm">Añadir</button>
+          </div>
+
+            <div class="col-4"><input class="form-control input-sm" [(ngModel)]="item.qt" type="number" min=1 [max]="item.cantidad" ></div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+</div>

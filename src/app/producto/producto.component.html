@@ -1,0 +1,50 @@
+<div class="main-container">
+
+
+<app-barra></app-barra>
+<div class="contenedor-producto" *ngFor="let item of productos">
+  <div class="row">
+    <div class="col nomprod-col">
+      <div class="nomprod">
+        <h4>{{item.nombre_}}</h4>
+      </div>
+     <hr>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col">
+
+      <div class="foto">
+        <img src="../assets/images/{{item.imagen}}" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="datos_prod">
+
+        <div class="carac">
+          <p>Precio: {{item.precio}}<br> Cantidad disponible: {{item.cantidad}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="boton">
+          <button type="button" class="btn btn-secondary"[routerLink]="['/catalogo']">Atrás</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+
+    </div>

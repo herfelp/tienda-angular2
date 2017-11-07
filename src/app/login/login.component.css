@@ -1,0 +1,21 @@
+.main-container {
+
+  background-image: url('../assets/images/login-fondo.jpg');
+  height:100vh;
+  font-family: 'Quicksand', sans-serif;
+
+
+}
+
+
+.formu{
+  color: white;
+  padding-top: 10em !important;
+  width: 30%;
+  margin: auto !important;
+}
+
+
+input.ng-touched.ng-invalid{
+  border: 1px solid red;
+}

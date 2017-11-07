@@ -1,0 +1,59 @@
+<div class="main-container">
+
+
+  <app-barra></app-barra>
+  <div class="contenedor-carrito">
+
+    <div class="row">
+      <div class="col">
+        <div class="nomprod">
+          <h4>Carrito de compras</h4>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+
+        <div class="list-group">
+          <div class="item" *ngFor="let item of carrito">
+            <div class="row">
+              <div class="col-3">
+                <div class="foto">
+                  <img src="../assets/images/{{item.imagen}}" alt="">
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="detalle">
+                  <p>Nombre: {{item.nombre}}</p>
+                  <p>Unidades: {{item.qt}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col subt">
+                <p>Subtotal: ${{item.qt*item.precio | number:'1.0'}}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <h3>Total: ${{total | number:'1.0'}}</h3>
+        <div class="row botones">
+          <div class="col">
+            <button [routerLink]="['/catalogo']" type="button" class="btn btn-secondary">Cancelar</button>
+            <button type="button" class="btn btn-secondary" (click)="myFunc()">Pagar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
