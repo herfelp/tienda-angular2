@@ -22,4 +22,16 @@ export class LoginComponent {
       );
   }
 
+  comprueba(){
+    this.authService.isAuthenticated()
+      .subscribe(
+        success => {if(success != true){
+          this.router.navigate(['/login'])
+        }},
+        error => console.log("error")
+
+      );
+
+  }
+
 }

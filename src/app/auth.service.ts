@@ -20,7 +20,7 @@ export class AuthService {
   }
 
 
-  isAuthenticated(): Observable<boolean> {
+  isAuthenticated(): Observable<any> {
     console.log(this.user.map(user => user && user.uid !== undefined))
     return this.user.map(user => user && user.uid !== undefined);
   }
